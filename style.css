@@ -5,10 +5,10 @@ body {
 				/*This will make the background color black an not see-through: background-color: rgba(0, 0, 0,1);*/
 				/* Find interesting fonts online at www.google.com/fonts/*/ 
 ul {
-    padding: 10px;
+    padding: 0px 60px 10px 60px;
     background: rgba(47, 164, 172, 1);
     }
 li {
 	display: table-cell;
-   	padding: 10px;
-   	}
+	vertical-align: middle;
+   	padding: 0px 100px 0px 100px;   	}
