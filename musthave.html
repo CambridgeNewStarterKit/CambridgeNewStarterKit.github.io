@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!--var markers = [
+      ['Poundland', 52.2068152, 0.1285616,17],
+      ['Metro Bank', 52.20494 , 0.1202897,17],
+      ['Sainsbury', 52.2025619, 10.122336,17],
+      ['Wilko', 52.2068046, 10.1282579,17],
+      ['Ryder and Amies', 52.2050316, 0.1156868,17] ; ]-->
+<html>
+<body>
+<div id="map" style="width:100%;height:500px"></div>
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(52.2032007,0.116724,15);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 15};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+</body>
+</html>
