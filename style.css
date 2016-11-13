@@ -10,4 +10,9 @@ body {
    border-style: solid;
    border-width: 5px;
    border-radius: 5px;
-}
+  }
+
+/* remove the bullets from all li with class="useful_links" */
+  li.useful_links { list-style-type: none; }
+
+
