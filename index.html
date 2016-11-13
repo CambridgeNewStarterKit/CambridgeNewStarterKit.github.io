@@ -10,19 +10,21 @@
 		<link href='bootstrap-3.3.7-dist/css/bootstrap.css' rel='stylesheet'> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<!--This is the navbar at the bottom-->
 	<nav class="navbar navbar-inverse navbar-fixed-bottom">
   		<div class="container-fluid">
    			 <div class="navbar-header">
      		<a class="navbar-brand" href="#">Cambridge New Starter Kit</a>
    		 </div>
     	<ul class="nav navbar-nav">
-    		<li><a class="active" href="#musthave">Must have</a></li>
-     		<li><a class="active" href="#forsale">For sale</a></li> 
-      		<li><a class="active" href="#help">More help</a></li> 
+    		<li><a href="#musthave">Must have</a></li>
+     		<li><a href="#forsale">For sale</a></li> 
+      		<li><a href="#help">More help</a></li> 
     	</ul>
  		 </div>
-	</nav>
+	</nav> 
 		<header>
 		<div class="row">
   			<div class="col-md-8">
@@ -32,6 +34,7 @@
 			</h1>
 		</div>
 		</div>
+		<!-- Here starts our header with the tabs and links and pics-->
 		<div class="col-md-4">	
 			<img src='cam.jpg' alt="cambridge" width="400">
 		</div>
@@ -60,17 +63,31 @@
 				</div>
 		</div>
 		</header>
+		<!--Here starts the content-->
 <div class="text-center">
 			<div id="musthave">
 				<h3><a name="musthave"></a>Must have. But where from?</h3> 
-				<p> Here there will be a list of necessities and hopefully a map for being able to find them </p>
-			</div>
+				<p> Here there will be a list of necessities and hopefully markers on the a map for being able to find them </p>
+<!--This is for inserting the google map -->
+				<div id="map" style="width:100%;height:500px"></div>
+		<script>
+			function myMap() {
+  			var myCenter = new google.maps.LatLng(52.2032007,0.116724,15);
+  			var mapCanvas = document.getElementById("map");
+  			var mapOptions = {center: myCenter, zoom: 15};
+  			var map = new google.maps.Map(mapCanvas, mapOptions);
+			}
+			</script>
+	<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+			</div>		
 		<div id="forsale">
 				<h3><a name="forsale"></a>For sale and exchange</h3>
 				<p> Would you like to sell, buy or exchange your gowns, bikes or formal tickets? You can do it here. </p>
+ <!--This is for inserting the google sheet -->
 
 			<iframe src="https://docs.google.com/spreadsheets/d/1u02K5anSzbvCV2z7Kiz669Oy3mdpQtAAkamm7ZPJFg0/pubhtml?widget=true&amp;headers=false"></iframe>
-			<a href=https://docs.google.com/spreadsheets/d/1u02K5anSzbvCV2z7Kiz669Oy3mdpQtAAkamm7ZPJFg0/edit?usp=sharing class="btn btn-info" role="button">Edit here</a>
+<!--This is for the link for an editable table -->
+			<a href=https://docs.google.com/spreadsheets/d/1u02K5anSzbvCV2z7Kiz669Oy3mdpQtAAkamm7ZPJFg0/edit?usp=sharing class="btn btn-info" role="button" target="blank">Edit here</a>
 		</div>
 		<div id="help">
 			<h3><a name="help"></a> More help and useful liks</h3>
