@@ -106,6 +106,7 @@
 		</header>
 		<!--Here starts the content-->
 <div class="text-center">
+<!--Here starts the Musthave section-->
 			<div id="musthave">
 				<h3><a name="musthave"></a>Must have. But where from?</h3> 
 				<p> Here there will be a list of necessities and hopefully markers on the a map for being able to find them </p>
@@ -137,7 +138,7 @@
       },
       {name: "Wilko",
       lat: 52.2068046, 
-      lng: 10.1282579
+      lng: 0.1282579
   	},
       {
       name: "Ryder and Amies",
@@ -150,22 +151,24 @@
       
       for (var i = 0; i < markers.length; i++) {
             var data = markers[i];
+            var content = data.name;
             var myLatlng = new google.maps.LatLng(data.lat, data.lng);
             var marker = new google.maps.Marker({
                 position: myLatlng,
                 map: myMap,
-                title: name,
+                name: content,
             });
             /* here starts the Infowindow */
             var infowindow = new google.maps.InfoWindow();
 
     google.maps.event.addListener(marker, "click", (function(marker) {
       return function(evt) {
-        infowindow.setContent(name);
+        infowindow.setContent(content);
         infowindow.open(map, marker);
       }
     })(marker));
-    marker.setMap(map); 
+
+    marker.setMap(map);
 
     marker_objects.push(marker);
                     
@@ -175,6 +178,7 @@
 			</script>
 			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVOxLQVQXd9BM-golo8Me6vg33SMgxHU4&callback=myMap" async defer></script>
 			</div>		
+			<!--Here starts the Forsale question-->
 		<div id="forsale">
 				<h3><a name="forsale"></a>For sale and exchange</h3>
 				<p> Would you like to sell, buy or exchange your gowns, bikes or formal tickets? You can do it here. </p>
@@ -185,6 +189,7 @@
 			<a href=https://docs.google.com/spreadsheets/d/1u02K5anSzbvCV2z7Kiz669Oy3mdpQtAAkamm7ZPJFg0/edit?usp=sharing class="btn btn-info" role="button" target="blank">Edit here</a>
 		</div>
 		</div>
+		<!--Here starts the Help section -->
 		<div id="help">
 			<h3><a name="help"></a> More help and useful links</h3>
 <!-- This doesn't look pretty yet but I am just putting the links in so we have all the information-->
