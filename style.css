@@ -1,6 +1,6 @@
 body {
 	font-family: helvetica, sans-serif;
-  }
+}
 				/*background-size: contain;*
 				/*This will make the background color black an not see-through: background-color: rgba(0, 0, 0,1);*/
 				/* Find interesting fonts online at www.google.com/fonts/*/ 
@@ -11,5 +11,15 @@ body {
    border-width: 5px;
    border-radius: 5px;
   }
+#bodybackground {
+  background: url(background.jpg);
+  background-repeat: repeat-y;
+  background-size: 100%;
+  background-position: center;
+}
 
+h1 {
+  color: black;
+  text-shadow: -2px 0 rgba(47, 164, 172, 1), 0 2px rgba(47, 164, 172, 1), 2px 0 rgba(47, 164, 172, 1), 0 -2px rgba(47, 164, 172, 1);
+}
 
