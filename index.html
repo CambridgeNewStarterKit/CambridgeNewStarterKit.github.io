@@ -118,6 +118,7 @@
   			var mapCanvas = document.getElementById("map");
   			var mapOptions = {center: myCenter, zoom: 15};
   			var map = new google.maps.Map(mapCanvas, mapOptions);
+			/* This is the array for the information*/
 			var markers = [
       { 
       	name: "Poundland", 
@@ -144,7 +145,8 @@
       lng: 0.1156868
   	} 
       ];
-
+        marker_objects = [];
+/*here starts the loop for setting the markers*/
       
       for (var i = 0; i < markers.length; i++) {
             var data = markers[i];
@@ -154,8 +156,21 @@
                 map: myMap,
                 title: name,
             });
-            marker.setMap(map);
+            /* here starts the Infowindow */
+            var infowindow = new google.maps.InfoWindow();
+
+    google.maps.event.addListener(marker, "click", (function(marker) {
+      return function(evt) {
+        infowindow.setContent(marker, i);
+        infowindow.open(map, marker);
       }
+    })(marker));
+    marker.setMap(map); 
+
+    marker_objects.push(marker);
+                    
+      }
+
   };
 			</script>
 			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVOxLQVQXd9BM-golo8Me6vg33SMgxHU4&callback=myMap" async defer></script>
@@ -168,6 +183,7 @@
 			<iframe src="https://docs.google.com/spreadsheets/d/1u02K5anSzbvCV2z7Kiz669Oy3mdpQtAAkamm7ZPJFg0/pubhtml?widget=true&amp;headers=false"></iframe>
 <!--This is for the link for an editable table -->
 			<a href=https://docs.google.com/spreadsheets/d/1u02K5anSzbvCV2z7Kiz669Oy3mdpQtAAkamm7ZPJFg0/edit?usp=sharing class="btn btn-info" role="button" target="blank">Edit here</a>
+		</div>
 		</div>
 		<div id="help">
 			<h3><a name="help"></a> More help and useful links</h3>
