@@ -19,7 +19,7 @@ body {
 }
 
 h1 {
-  color: black;
-  text-shadow: -2px 0 rgba(47, 164, 172, 1), 0 2px rgba(47, 164, 172, 1), 2px 0 rgba(47, 164, 172, 1), 0 -2px rgba(47, 164, 172, 1);
+  color: rgba(47, 164, 172, 1);
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
