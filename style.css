@@ -40,6 +40,11 @@ h3 {
   background-color: rgba(47, 164, 172, 1);
 }
 
+#button:hover {
+  background: rgba(209, 60, 60, 1);
+  color: white;
+}
+
 .link:hover {
   text-decoration:none;
   color: rgba(209, 60, 60, 1);
