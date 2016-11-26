@@ -23,17 +23,21 @@ h1 {
   /* I don't really like this: text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; */
 }
 
-
-trying to center the images on the carousel. Both options should work but neither does!
-
-.carousel-inner > .item > img {
-    margin: 0 auto;
+h3 {
+  text-align: center;
 }
 
-#carousel-example-generic{
+#intro {
+  text-align: center;
+}
+
+/*trying to center the images on the carousel. Doesn't work yet!
+   
+#carousel-example-generic {
     position: center;
-    /*margin:auto;*/
+    margin:auto;
 }
-/*helpful tips: http://stackoverflow.com/questions/19582340/make-bootstraps-carousel-both-center-and-responsive
+
+helpful tips: http://stackoverflow.com/questions/19582340/make-bootstraps-carousel-both-center-and-responsive
 
 */
