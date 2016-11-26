@@ -131,10 +131,11 @@
 								function myMap() {
 					  			var myCenter = new google.maps.LatLng(52.2032007,0.116724,15);
 					  			var mapCanvas = document.getElementById("map");
-					  			var mapOptions = {center: myCenter, zoom: 15};
+					  			var mapOptions = {center: myCenter, zoom: 13};
 					  			var map = new google.maps.Map(mapCanvas, mapOptions);
 								/* This is the array for the information*/
 								var markers = [
+							    	/*For each shop/restaurant I added a buzzword/short description of what I recommend to buy here*/
 							    	{ 
 							      		name: "Poundland: cheap cutlery, crockery and much more", 
 							      		lat: 52.2068152, 
@@ -199,7 +200,7 @@
 							      ];
 							        marker_objects = [];
 							/*here starts the loop for setting the markers*/  
-							      for (var i = 0; i < markers.length; i++) {
+							    for (var i = 0; i < markers.length; i++) {
 							            var data = markers[i];
 							            var content = data.name;
 							            var myLatlng = new google.maps.LatLng(data.lat, data.lng);
@@ -247,7 +248,7 @@
 				<div id="help">
 					<h3><a name="help"></a> Helpful resources for new arrivals in Cambridge</h3>
 						<p> Click on the links to find useful information on ... </p>
-							<table class="table table-striped">
+							<table class="table table-hover">
 								<tr>
 									<td>
 									<a href="https://www.applytocambridge.com/colleges" target="blank">The 31 Cambridge Colleges</a>
