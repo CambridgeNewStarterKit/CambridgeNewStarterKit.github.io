@@ -19,7 +19,21 @@ body {
 }
 
 h1 {
-  color: rgba(47, 164, 172, 1);
-  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  color: rgba(47, 164, 172, 1); /*why doesn't it work? The text is still black!*/
+  /* I don't really like this: text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; */
 }
 
+
+trying to center the images on the carousel. Both options should work but neither does!
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+#carousel-example-generic{
+    position: center;
+    /*margin:auto;*/
+}
+/*helpful tips: http://stackoverflow.com/questions/19582340/make-bootstraps-carousel-both-center-and-responsive
+
+*/
