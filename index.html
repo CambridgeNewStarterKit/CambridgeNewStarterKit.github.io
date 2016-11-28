@@ -217,7 +217,7 @@
 							            /* here starts the Infowindow */
 							            var infowindow = new google.maps.InfoWindow();
 
-									    google.maps.event.addListener(marker, "click", (function(marker) {
+									    google.maps.event.addListener(marker, "click", (function (marker) {
 									      return function(evt) {
 									        infowindow.setContent(content);
 									        infowindow.open(map, marker);
