@@ -48,3 +48,13 @@ h3 {
   text-decoration:none;
   color: rgba(209, 60, 60, 1);
 }
+.carousel-inner {
+  height: 450px;
+  width: 100%;
+  overflow: hidden;
+  position: : center;}
+.item {
+  height: 450px;
+  width: 100%;
+  overflow: hidden;
+  position: : center;}
