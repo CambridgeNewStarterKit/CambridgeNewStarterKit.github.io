@@ -221,7 +221,7 @@
 
 									    google.maps.event.addListener(marker, "click", (function (marker) {
 									      return function(evt) {
-									        infowindow.setContent(content);
+									        infowindow.setContent(marker.name);
 									        infowindow.open(map, marker);
 									      }
 									    })(marker));
@@ -230,9 +230,9 @@
 
 									    marker_objects.push(marker);
 									                    
-									      }
+								}
 
-									  };
+							};
 							</script>
 							<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVOxLQVQXd9BM-golo8Me6vg33SMgxHU4&callback=myMap" async defer></script>
 						</div>		

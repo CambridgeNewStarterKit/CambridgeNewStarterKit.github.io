@@ -96,12 +96,12 @@ function myMap() {
                         }
                          /* attached infowindow outside of loop*/
                          function attachInfo(marker, mycontent) { 
-        function addInfoWindow(marker, mycontent) {
-    var infoWindow = new google.maps.InfoWindow({
-        content: mycontent });
-          google.maps.event.addListener(marker, 'click', (function (marker) {   
-                          infowindow.setContent(mycontent); 
-                          infowindow.open(map, marker);
+                              function addInfoWindow(marker, mycontent) {
+                                  var infoWindow = new google.maps.InfoWindow({
+                                      content: mycontent });
+                                        google.maps.event.addListener(marker, 'click', (function (marker) {   
+                                                        infowindow.setContent(mycontent); 
+                                                        infowindow.open(map, marker);
 
                   
 
