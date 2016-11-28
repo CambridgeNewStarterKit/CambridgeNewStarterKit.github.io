@@ -18,9 +18,8 @@ body {
   background-position: center;
 }
 
-h1 {
-  color: rgba(47, 164, 172, 1); /*why doesn't it work? The text is still black!*/
-  /* I don't really like this: text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; */
+#h1 {
+  color: rgba(47, 164, 172, 1);
 }
 
 h3 {
