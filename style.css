@@ -49,13 +49,3 @@ h3 {
   text-decoration:none;
   color: rgba(209, 60, 60, 1);
 }
-/*trying to center the images on the carousel. Doesn't work yet!
-   
-#carousel-example-generic {
-    position: center;
-    margin:auto;
-}
-
-helpful tips: http://stackoverflow.com/questions/19582340/make-bootstraps-carousel-both-center-and-responsive
-
-*/
