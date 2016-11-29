@@ -25,7 +25,14 @@ body {
 h3 {
   text-align: center;
 }
-
+h4 {
+  text-align: center;
+  color: rgba(47, 164, 172, 1);
+}
+#h4 
+{
+  color: rgba(47, 164, 172, 1);
+}
 #intro {
   text-align: center;
 }
