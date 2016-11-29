@@ -1,12 +1,26 @@
 <html>
-  <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  </head>
-  <body>
-    <input id="input" type="text">
-    <button id="button">Add</button>
-    <ul id="list">
-      <li>Item for Sale</li>
-    </ul> 
-  </body>
+<head>
+<script type="text/javascript" src="forsale.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+<tr>
+<th>Item</th>
+<th>Discription</th>
+<th>CRSID</th>
+<th></th>
+</tr>
+
+<tr>
+<td><input type="text" id="item"></td>
+<td><input type="text" id="discription"></td>
+<td><input type="text" id="CRSID"></td>
+<td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+</tr>
+
+</table>
+</div>
+
+</body>
 </html>
