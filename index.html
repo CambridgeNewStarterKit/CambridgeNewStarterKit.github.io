@@ -19,33 +19,31 @@
 	
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 		<div id=bodybackground>
-
-		<div class="container">
-		
-
+			<div class="container">
 		<!--This is the navbar at the bottom of the page-->
 			<nav class="navbar navbar-inverse navbar-fixed-bottom">
 	  			<div class="container-fluid">
 	   			 	<div class="navbar-header">
-	     			<a class="navbar-brand" href="#">Cambridge New Starter Kit</a>
-	   		 		</div>
-	    		<ul class="nav navbar-nav">
-	    			<li><a href="#musthave">Must have</a></li>
-	     			<li><a href="#forsale">For sale</a></li> 
-	      			<li><a href="#help">More help</a></li> 
-	    		</ul>
-	 		 	</div>
+		     			<a class="navbar-brand" href="#">Cambridge New Starter Kit</a>
+		   		 	</div>
+				    	<ul class="nav navbar-nav">
+				    		<li><a href="#musthave">Must have</a></li>
+				     		<li><a href="#forsale">For sale</a></li> 
+				      		<li><a href="#help">More help</a></li> 
+			    		</ul>
+			    </div>
+	 		 </div>
 			</nav> 
-		</div>
 			<header>
 				<div id="h1" class="row">
 	  				<div class="col-md-12">
-	  				<div class="text-center">
-						<h1> <a name="home"></a>
-						University of Cambridge New Starter Guide
-						</h1>
+		  				<div class="text-center">
+							<h1> <a name="home"></a>
+							University of Cambridge New Starter Guide
+							</h1>
+						</div>
 					</div>
-					</div>
+				</div>
 			
 
 			<!-- Here starts our header with the tabs and links and pics-->
@@ -87,7 +85,7 @@
 						<img src='kings_summer.jpg' alt="cambridge" height="200">
 						<img src='kings_winter.jpg' alt="cambridge" height="200"> -->
 					</div>
-				</div>
+				
 				<div class=container>
 					<h2><em>Welcome to Cambridge!</em></h2> 
 						<br>
@@ -96,24 +94,26 @@
 						<br>
 					
 					<div class='header'>
-						<div class='row'>
-							<div class="col-md-4">
-								<div class="text-center">
-								   <h3><a class="btn btn-default" href="#musthave" role="button">Must have. But where from?</a></h3>
-								   <img src="https://mbt20.files.wordpress.com/2013/11/img_0227.jpg" alt="musthave" width="100"/>
+						<div id=bodybackground>
+							<div class='row'>
+								<div class="col-md-4">
+									<div class="text-center">
+									   <h3><a class="btn btn-default" href="#musthave" role="button" id="bt">Must have. But where from?</a></h3>
+									   <img src="https://mbt20.files.wordpress.com/2013/11/img_0227.jpg" alt="musthave" width="100"/>
+									</div>
 								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="text-center">
-								   <h3>
-								   <a class="btn btn-default" href="#forsale" role="button">For sale and exchange</a></h3>
-								   <img src="http://www.hotelmirage-milano.com/resources/images/e812c1d7-e2d8-4d83-aa8e-cbecca12b5da/en/B/shopping-promotion.jpg" alt="sell" width="100" height="100"> 
-							   	</div>
-							</div>
-			                <div class="col-md-4">
-			                	<div class="text-center">
-								    <h3><a class="btn btn-default" href="#help" role="button">More help and useful links</a></h3>
-								    <img src="http://simplemarriage.net/wp-content/uploads/2013/10/HELP.jpg" alt="help" width="100" height="100"/> 
+								<div class="col-md-4">
+									<div class="text-center">
+									   <h3>
+									   <a class="btn btn-default" href="#forsale" role="button" id="bt">For sale and exchange</a></h3>
+									   <img src="http://www.hotelmirage-milano.com/resources/images/e812c1d7-e2d8-4d83-aa8e-cbecca12b5da/en/B/shopping-promotion.jpg" alt="sell" width="100" height="100"> 
+								   	</div>
+								</div>
+				                <div class="col-md-4">
+				                	<div class="text-center">
+									    <h3><a class="btn btn-default" href="#help" role="button" id="bt">More help and useful links</a></h3>
+									    <img src="http://simplemarriage.net/wp-content/uploads/2013/10/HELP.jpg" alt="help" width="100" height="100"/> 
+									</div>
 							 	</div>
 							</div>
 						</div>
@@ -133,6 +133,7 @@
 						<div id="map" style="width: 100%; height: 400px"></div>
 							<script src="map.js" type="text/javascript" charset="UTF-8"></script>
 							<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVOxLQVQXd9BM-golo8Me6vg33SMgxHU4&callback=myMap" async defer></script>
+						</div>
 					</div>		
 				</div>
 			</div>
@@ -141,7 +142,7 @@
 						<ul>
 							<li> Bread and Meat: Sandwiches </li>
 							<li> CAU: Steaks</li>
-							<li> Rainbow Café: Vegetarian food" </li>
+							<li> Rainbow Café: Vegetarian food </li>
 							<li> The Riverbar: Rooftop cocktail bar with excellent views over Cambridge </li>
 							<li> Charlie's Coffee Company: Pizza </li>
 							<li> Aromi: Pizza </li>
@@ -168,71 +169,78 @@
 							<br>
 						</ul>
 				</div>
-				</div>
+				
 				<br>
 				<br>
+
 				<!--Here starts the Forsale section-->
 				<!--Katharina! Would you like me to try to replace it today with a dynamic table with jquery? Or is it OK in this form? -->
-					<div id=bodybackground>
-					<div class=text-center>
+				<div id=bodybackground>
+					<div class="text-center">
 						<div id="forsale">
-							<h3><a name="forsale"></a>For sale and exchange</h3>
-							<p> Would you like to sell, buy or exchange your gowns, bikes or formal tickets? You can do it here. </p>
-			 				<!--This is for inserting the google sheet -->
-								<iframe src="https://docs.google.com/spreadsheets/d/1u02K5anSzbvCV2z7Kiz669Oy3mdpQtAAkamm7ZPJFg0/pubhtml?widget=true&amp;headers=false" style="width: 550px"></iframe>
-							<!--This is for the link for an editable table -->
-								<a href=https://docs.google.com/spreadsheets/d/1u02K5anSzbvCV2z7Kiz669Oy3mdpQtAAkamm7ZPJFg0/edit?usp=sharing id=button class="btn btn-info btn-lg" role="button" target="blank">Edit here</a>
+							<div class="col-md-12">
+								<h3><a name="forsale"></a>For sale and exchange</h3>
+								<p> Would you like to sell, buy or exchange items such as gowns, bikes or formal tickets? You can do it here. </p>
+				 				<!--This is for inserting the google sheet -->
+									<iframe src="https://docs.google.com/spreadsheets/d/1u02K5anSzbvCV2z7Kiz669Oy3mdpQtAAkamm7ZPJFg0/pubhtml?widget=true&amp;headers=false" style="width: 550px"></iframe>
+								<!--This is for the link for an editable table -->
+								<!--Can we please take out the title for the spreadsheet, it currently says 'For sale and exchange: for sale and exchange'. I don't think it's necessary to have this as it is right below the section title, which is also 'for sale and exchange'-->
+									<br>
+									<a href=https://docs.google.com/spreadsheets/d/1u02K5anSzbvCV2z7Kiz669Oy3mdpQtAAkamm7ZPJFg0/edit?usp=sharing id=button class="btn btn-info btn-lg" role="button" target="blank">Edit here</a>
+							</div>
 						</div>
 					</div>
-					</div>
+				</div>
 
 
 				<!--Here starts the Help section -->
 				<div id=bodybackground>
-			<div class=container>
-				<div id="help">
-					<h3><a name="help"></a> Helpful resources for new arrivals in Cambridge</h3>
-						<p> Click on the links to find useful information on ... </p>
-							<table class="table table-hover">
-								<tr>
-									<td>
-									<a class=link href="https://www.applytocambridge.com/colleges" target="blank">The 31 Cambridge Colleges</a>
-									</td>
-									<td>
-									This website includes information about food, sporting facilities, accommodation and the atmosphere of each College.
-									</td>
-								</tr>
-								<tr>
-									<td>
-									<a class=link href="http://www.societies.cam.ac.uk/" target="blank">Student societies</a>
-									</td>
-									<td>
-									Visit this website for an alphabetical list of all registered clubs and societies at the University of Cambridge.
-									</td>
-								</tr>
-								<tr>
-									<td>
-									<a class=link href="https://www.gumtree.com/cambridge" target="blank">Buying and selling items</a>
-									</td>
-									<td>
-									Our webiste is a great place to start if you are looking to buy or sell something, however, for a big selection there is no better place than gumtree.
-									</td>
-								</tr>
-								<tr>
-									<td>
-									<a class=link href="http://www.timeout.com/london">Events in London</a>
-									</td>
-									<td>
-									London is only a 45 min train ride from Cambridge and therefore a very easily accessible daytrip destination. Visit our recommended website to find out about fun events, such as exhibitions, fairs and shows as well as brand new restaurants, pubs and bars.
-									</td>
-								</tr>
-							</table>
-							<!-- Insert br tags to avoid text from the table hiding underneath the nav bar-->
-							<br>
-							<br>
+					<div class=container>
+						<div id="help">
+							<!--The h3 title below disappeared from the page and I could only get it to work again by writing it out twice. Very strange. -->
+							<h3><a name="help"></a>Helpful resources for new arrivals in Cambridge </h3>
+							<h3><a name="help"></a>Helpful resources for new arrivals in Cambridge </h3>
+								<p> Click on the links to find useful information on ... </p>
+									<table class="table table-hover">
+										<tr>
+											<td>
+											<a class=link href="https://www.applytocambridge.com/colleges" target="blank">The 31 Cambridge Colleges</a>
+											</td>
+											<td>
+											This website includes information about food, sporting facilities, accommodation and the atmosphere of each College.
+											</td>
+										</tr>
+										<tr>
+											<td>
+											<a class=link href="http://www.societies.cam.ac.uk/" target="blank">Student societies</a>
+											</td>
+											<td>
+											Visit this website for an alphabetical list of all registered clubs and societies at the University of Cambridge.
+											</td>
+										</tr>
+										<tr>
+											<td>
+											<a class=link href="https://www.gumtree.com/cambridge" target="blank">Buying and selling items</a>
+											</td>
+											<td>
+											Our webiste is a great place to start if you are looking to buy or sell something, however, for a big selection there is no better place than gumtree.
+											</td>
+										</tr>
+										<tr>
+											<td>
+											<a class=link href="http://www.timeout.com/london">Events in London</a>
+											</td>
+											<td>
+											London is only a 45 min train ride from Cambridge and therefore a very easily accessible daytrip destination. Visit our recommended website to find out about fun events, such as exhibitions, fairs and shows as well as brand new restaurants, pubs and bars.
+											</td>
+										</tr>
+									</table>
+									<!-- Insert br tags to avoid text from the table hiding underneath the nav bar-->
+									<br>
+									<br>
+						</div>
+					</div>
 				</div>
-			</div>
-				
 				<!-- For Google Analitics -->
 				<script>
 				  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

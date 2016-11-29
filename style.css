@@ -11,7 +11,7 @@ body {
    border-style: solid;
    border-width: 5px;
    border-radius: 5px;
-  }
+}
 
 #bodybackground {
   background: url(background.jpg);
@@ -30,13 +30,22 @@ h2 {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+h3 {
+  text-align: center;
+}
+
+#bt:hover{
+  border-color: rgba(209, 60, 60, 1);
+  background: #e6e6e6;
+  border-width: 2px;
+}
+
 h4 {
   text-align: center;
   color: rgba(47, 164, 172, 1);
 }
 
-#h4 
-{
+#h4 {
   color: rgba(47, 164, 172, 1);
 }
 
@@ -67,10 +76,12 @@ h4 {
   height: 450px;
   width: 100%;
   overflow: hidden;
-  position: : center;}
+  position: : center;
+}
 
 .item {
   height: 450px;
   width: 100%;
   overflow: hidden;
-  position: : center;}
+  position: : center;
+}
