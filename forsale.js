@@ -43,7 +43,7 @@ function add_row()
 	
  var table=document.getElementById("data_table");
  var table_len=(table.rows.length)-1;
- var row = table.insertRow(table_len).outerHTML="<tr id='row"+table_len+"'><td id='item_row"+table_len+"'>"+new_item+"</td><td id='description_row"+table_len+"'>"+new_description+"</td><td id='crsid_row"+table_len+"'>"+new_crsid+"</td><td><input type='button' id='edit_button"+table_len+"' value='Edit' class='edit' onclick='edit_row("+table_len+")'> <input type='button' id='save_button"+table_len+"' value='Save' class='save' onclick='save_row("+table_len+")'> <input type='button' value='Delete' class='delete' onclick='delete_row("+table_len+")'></td></tr>";
+ var row = table.insertRow(table_len).outerHTML="<tr id='row"+table_len+"'><td id='item_row"+table_len+"'>"+new_item+"</td><td id='description_row"+table_len+"'>"+new_description+"</td><td id='crsid_row"+table_len+"'>"+new_crsid+"</td><td><input type='button' id='edit_button"+table_len+"' value='Edit' class='edit' onclick='edit_row("+table_len+")'> <input type='button' id='save_button"+table_len+"' value='Save' class='save' onclick='save_row "+table_len+"'> <input type='button' value='Delete' class='delete' onclick='delete_row("+table_len+")'></td></tr>";
 
  document.getElementById("new_item").value="";
  document.getElementById("new_description").value="";

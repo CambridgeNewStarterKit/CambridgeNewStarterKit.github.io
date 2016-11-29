@@ -1,36 +1,43 @@
-<html>
-<head>
-<script type="text/javascript" src="na.js"></script>
-</head>
-<body>
-<div id="wrapper">
-<table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
-<tr>
-<th>Item</th>
-<th>Description</th>
-<th>CRSID</th>
-</tr>
-
-<tr id="row1">
-<td id="item_row1">What's that?</td>
-<td id="description_row1">Are you selling it or looking for it? What are the details?</td>
-<td id="crsid_row1">Ensure the exchange between students, connect with your crsid</td>
-<!--td>
-<input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
-<input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
-<input type="button" value="Delete" class="delete" onclick="delete_row('1')"> 
-</td> -->
-</tr>
-
-<tr>
-<td><input type="text" id="new_item"></td>
-<td><input type="text" id="new_description"></td>
-<td><input type="text" id="new_crsid"></td>
-<td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
-</tr>
-
-</table>
+<div class="container">
+<script type="text/javascript" src="forsale2.js"></script>
+    <div class="row clearfix">
+		<div class="col-md-12 column">
+			<table class="table table-bordered table-hover" id="tab_logic">
+				<thead>
+					<tr >
+						<th class="text-center">
+							#
+						</th>
+						<th class="text-center">
+							Item
+						</th>
+						<th class="text-center">
+							Description
+						</th>
+						<th class="text-center">
+							CRSID
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr id='addr0'>
+						<td>
+						1
+						</td>
+						<td>
+						<input type="text" name='Item0'  placeholder='Item' class="form-control"/>
+						</td>
+						<td>
+						<input type="text" name='Descsription0' placeholder='Description' class="form-control"/>
+						</td>
+						<td>
+						<input type="text" name='CRSID0' placeholder='CRSID' class="form-control"/>
+						</td>
+					</tr>
+                    <tr id='addr1'></tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<a id="add_row" class="btn btn-default pull-left">Add Row</a><a id='delete_row' class="pull-right btn btn-default">Delete Row</a>
 </div>
-
-</body>
-</html>
