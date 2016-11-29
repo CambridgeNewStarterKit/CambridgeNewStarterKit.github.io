@@ -1,21 +1,31 @@
 <html>
 <head>
-<script type="text/javascript" src="forsale.js"></script>
+<script type="text/javascript" src="na.js"></script>
 </head>
 <body>
 <div id="wrapper">
 <table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
 <tr>
 <th>Item</th>
-<th>Discription</th>
+<th>Description</th>
 <th>CRSID</th>
-<th></th>
+</tr>
+
+<tr id="row1">
+<td id="item_row1">What's that?</td>
+<td id="description_row1">Are you selling it or looking for it? What are the details?</td>
+<td id="crsid_row1">Ensure the exchange between students, connect with your crsid</td>
+<!--td>
+<input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+<input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+<input type="button" value="Delete" class="delete" onclick="delete_row('1')"> 
+</td> -->
 </tr>
 
 <tr>
-<td><input type="text" id="item"></td>
-<td><input type="text" id="discription"></td>
-<td><input type="text" id="CRSID"></td>
+<td><input type="text" id="new_item"></td>
+<td><input type="text" id="new_description"></td>
+<td><input type="text" id="new_crsid"></td>
 <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
 </tr>
 
